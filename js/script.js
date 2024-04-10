@@ -6,19 +6,34 @@ const startButton = document.getElementById("start-btn");
 startButton.addEventListener("click", startCountdown);
 
 // dichiaro una variabile per i secondi
-let seconds = 10;
+let seconds = 11;
 
 // funzione di call back che si attiva al click del bottone
 function startCountdown() {
-    if (seconds > 1) {
-        seconds--;
-        console.log(seconds);
-    } else {
-        console.log("buon anno!");
-        clearInterval(stopTimer);
-    }
-    
-}
+    const timer = setInterval(function() {
+        const secondsElem = document.querySelector(".time");
+        startButton.classList.add("d-none");
+        secondsElem.classList.remove("d-none")
 
-const stopTimer = setInterval(startCountdown, 1000);
+        if (seconds >= 1) {
+            seconds--;
+            console.log(seconds);
+        } else {
+            console.log("buon anno!");
+            clearInterval(timer);
+        }
+        
+        // gestisco la stampa in pagina
+        const iconElem = document.querySelector(".party-icon")
+    
+        if (seconds != 0) {
+            secondsElem.innerText = `- ${seconds}`;
+        } else {
+            secondsElem.innerText = `Buon Anno!`;
+            iconElem.classList.add("d-block");
+
+        }
+
+    }, 1000)    
+}
 
