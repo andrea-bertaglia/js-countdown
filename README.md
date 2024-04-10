@@ -7,7 +7,11 @@ Iniziate stampando il countdown nella console e dopo stampatelo in pagina.
 
 ### Svolgimento
 
-- testo
+- creo il layout HTML/CSS
+- prelevo il bottone dalla pagina e aggiungo event listener
+- dichiaro la variabile dei secondi
+- creo la funzione che decrementa di 1 ogni 1000 millisecondi
+- stampo il risultato
 
 ## Bonus - descrizione:
 
