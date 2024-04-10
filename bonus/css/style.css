@@ -3,9 +3,55 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* test */
 body {
-  background-color: lightskyblue;
+  background-color: lightcyan;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.top {
+  padding: 0.3em;
+  border: 10px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  font-weight: bold;
+  margin: 0.3em;
+}
+
+.bottom {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.bottom button {
+  font-size: 2rem;
+  padding: 0.1em 0.3em;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+}
+
+button:first-child {
+  background-color: lightseagreen;
+}
+
+button:last-child {
+  background-color: orange;
 }

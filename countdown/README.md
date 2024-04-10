@@ -21,4 +21,11 @@ Dopo averlo implementato fatevi questa domanda: che cosa succede se utente clicc
 
 ### Svolgimento
 
-- testo
+- creo layout
+- creo le variabili min e sec
+- creo l'event listener del bottone start
+- creo la funzione che incrementa secondi e minuti
+- creo l'event listener del bottone stop
+- creo la funzione di stop
+- creo l'event listener del bottone cancel
+- creo la funzione che resetta il timer
